@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+   background: url(./undraw_Weather_app_re_kcb1.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  
+}
+
+#app{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+}
+#form{
+  width: 80%;
+  border:1px solid #d4a509;
+  margin-top: 60px;
+}
+#info{
+  width: 80%;
+  margin-top: 60px;
+  border:1px solid #d4a509;
+}
+.headline{
+  color: white;
+  display:inline-block;
+  margin-top: 0;
+  font-size: 25px;
+  background-color: #0a113a;
+  padding: 20px;
+  text-align: center;
+  
+}
+#zip,
+#feelings,
+#generate{ 
+  background: #07133340;
+  margin: 70px auto 0px;
+  width: 50%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 45px;
+  text-align: center;
+  color: white;
+  display: block;
+  font-size: 15px;
+  resize: none;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+#zip::placeholder,
+#feelings::placeholder{
+  color: white;
+  font-family: sans-serif;
+  line-height: 45px;
+}
+#error {
+  color: #e91e1e;
+  /* background-color: #0a113a25; */
+  font-size: large;
+  width: 50%;
+  text-align: center;
+  margin: 0px auto 12px;
+  display: block;
+  line-height: 30px;
+  
+}
+#feelings{
+  margin-top: 0;
+}
+#generate{
+  width: 20%;
+  margin-top: 18px;
+  background: #0a113a;
+  cursor: pointer;
+}
+#entry{
+  width: 70%;
+  background: #07133340;
+  margin: 80px auto;
+  border-radius: 10px;
+  height: 300px;
+  opacity: 0;
+  transition: all 2s ease;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+.title{
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+#entryHolder{
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 60%;
+  grid-template-columns: 50% 50%;
+  font-size: 1.5vw;
+}
+#content{
+  grid-column: 1 / -1;
+}
+#temp,
+#city{
+  font-size: 4vw;
+  color: rgb(194, 72, 41);
+}
